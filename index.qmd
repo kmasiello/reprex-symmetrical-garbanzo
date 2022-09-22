@@ -1,0 +1,10 @@
+---
+title: "Welcome"
+date-meta: NA
+last-update: 2022-09-08
+# categories:
+# tags:
+---
+
+Welcome to Posit Solutions, the publication home for the Posit Solutions Engineering team. This site gathers our (sometimes opinionated) best practices, recommended usage patterns, and explanatory materials to help you thrive with open source data science and Posit tooling in production-grade environments.
+

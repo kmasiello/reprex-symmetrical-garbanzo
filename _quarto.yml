@@ -1,0 +1,122 @@
+project:
+  type: website
+
+website:
+  sidebar:
+    contents:
+      # - text: "Home"
+      #   file: index.qmd
+      # - auto: true
+      # - "---"
+      - auto: section1
+      # - "---"
+      # - auto: section2
+      
+  # title: "Posit :: solutions"
+  # site-url: "https://solutions.posit.co"
+  # favicon: "images/Posit-Product_team-favicon.png"
+  # twitter-card: true
+  # open-graph: true
+  # page-navigation: false
+  # page-footer:
+  #   left: |
+  #     Copyright © 2022 Posit Software, PBC. All Rights Reserved.
+  #   center: 
+  #     - text: "Solutions home"
+  #       href: /
+  #   right:
+  #     - icon: house-fill
+  #       href: https://www.posit.co
+  #     - icon: question-circle-fill
+  #       href: https://support.posit.co/hc/en-us
+  #     - icon: twitter
+  #       href: https://twitter.com/rstudio
+  # navbar:
+  #   logo: images/brand/posit-logo-fullcolor-TM.svg
+  #   logo-alt: "Posit logo."
+  #   collapse-below: lg
+  #   left:
+  #     - text: "Coding Effectively"
+  #       href: code-effectively
+  #     - text: "Connecting to Data and Integrating with Systems"
+  #       href: connectivity
+  #     - text: "Security and Access Control"
+  #       href: secure-access
+  #     - text: "Reproducibility, Package and Environment Mgmt"
+  #       href: envs-pkgs
+  #     - text: "Optimal Architectures and Configurations"
+  #       href: architecting
+  #     - text: "DevOps, Monitoring, Operations"
+  #       href: operations
+  #     - text: "Enterprise Examples"
+  #       href: examples
+  #     - text: "Help"
+  #       href: help.md
+
+
+  # sidebar:
+  #   style: "docked"
+  #   search: true
+  #   contents: 
+  #     - help.md
+  #     - auto: true
+      # - section: code-effectively
+      #   contents: 
+      #     - href: code-effectively
+      #     - auto: true
+      # - section: connectivity
+      #   contents: 
+      #     - connectivity/index.qmd
+
+    # - id: code-effectively
+    #   title: "Coding Effectively"
+    #   style: docked
+    #   contents: 
+    #     - href: coding-effectively
+
+    # - id: connectivity
+    #   title: "Connecting to Data and Integrating with Systems"
+    #   contents: 
+    #     - href: connectivity
+  
+    # - id: secure-access
+    #   title: "Security and Access Control"
+    #   contents: 
+    #     - secure-access
+
+    # - id: envs-pkgs
+    #   title: "Reproducibility, Package and Environment Mgmt"
+    #   contents: 
+    #     - envs-pkgs
+
+    # - id: architecting
+    #   title: "Optimal Architectures and Configurations"
+    #   contents: 
+    #     - architecting
+
+    # - id: operations
+    #   title: "DevOps, Monitoring, Operations"
+    #   contents: 
+    #     - operations
+
+    # - id: examples
+    #   title: "Enterprise Examples"
+    #   contents: 
+    #     - examples
+
+
+# format:
+#   html:
+#     toc: true
+#     # Controls whether external links open in new windows
+#     link-external-newwindow: true
+#     # Controls whether an icon adorns external links (either true or the bootstrap icon name)
+#     link-external-icon: true
+#     number-sections: false
+#     theme:
+#       - cosmo
+#       - styles/styles.scss
+#     code-overflow: scroll
+#     code-copy: true
+
+# freeze: auto

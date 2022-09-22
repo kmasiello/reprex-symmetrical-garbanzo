@@ -1,0 +1,42 @@
+---
+title: "Configuring Python within Posit products"
+date-meta: NA
+last-update: NA
+# categories:
+# tags:
+---
+
+## Overview
+
+Administrators can configure Python and Jupyter with Workbench for development and Connect for publishing.
+
+For more information on end-user workflows with Python and Jupyter in Posit products, refer to the resources below.
+
+![](configuring-python-with-rstudio.drawio.svg)
+
+Once configured, users can publish Jupyter Notebooks or R applications that call Python scripts and code.
+
+## Ready to integrate Jupyter Notebooks with Workbench?
+
+You can configure Jupyter Notebooks on a single server or with external resource managers such as Kubernetes or Slurm.
+
+* Documentation for [integrating Workbench with Jupyter Notebooks on a single server](https://docs.posit.co/rsw/integration/jupyter-standalone/)
+
+* Documentation for [integrating Workbench with Jupyter Notebooks, Launcher, and Kubernetes](https://docs.posit.co/rsw/integration/jupyter-kubernetes/)
+
+* Documentation for [integrating Workbench with Jupyter Notebooks, Launcher, and Slurm](https://docs.posit.co/rsw/integration/jupyter-slurm/)
+
+## Want to help users get started developing and publishing Python with Posit products?
+
+* Users can follow steps to [install and use Python environments and packages with Posit products](https://support.posit.co/hc/en-us/articles/360023654474-Installing-and-Configuring-Python-with-RStudio)
+
+* Administrators can install and integrate Jupyter with Workbench using the links in the above section.
+
+* Administrators can [install Python on Workbench and Connect](https://support.posit.co/hc/en-us/articles/360021259293-Configuring-Python-with-RStudio-Server-Pro-and-RStudio-Connect)
+for users to develop and publish R content that calls Python scripts and code.
+
+## Want to learn more about using Python with Posit products?
+
+* Frequently asked questions for [using Jupyter Notebooks with Workbench](https://support.posit.co/hc/en-us/articles/360035543933-FAQ-for-Using-Jupyter-Notebooks-with-RStudio-Server-Pro)
+
+* Frequently asked questions for [using Python with Connect](https://support.posit.co/hc/en-us/articles/360016990813-FAQ-for-Using-Python-with-RStudio-Connect)

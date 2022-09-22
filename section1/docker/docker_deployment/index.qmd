@@ -1,0 +1,68 @@
+---
+title: "Running Posit Products in Containers"
+date-meta: NA
+last-update: NA
+# categories:
+# tags:
+---
+
+Many organizations run Posit Professional products in Docker (or
+other) containers. Containerization is entirely compatible with Posit
+products, and many Posit administrators successfully run our products
+in containers and on Kubernetes.
+
+Posit products are designed to run on long-lived Linux servers for
+multiple users and projects. Therefore, administrators who want to run
+Posit products using Docker or Kubernetes have two separate questions,
+which this article aims to address:
+
+1.  How and why do I put the Posit products themselves in containers?
+2.  How do I use containerization and a cluster manager like Kubernetes
+    to scale computational load for data science jobs?
+
+In general, we do not recommend putting Posit Professional products
+themselves in short-lived per-user or per-session containers or
+Kubernetes pods.
+
+## Putting Posit products in containers
+
+Posit products are designed to live on **long-running Linux servers**.
+Posit products are entirely compatible with treating a container like
+the underlying Linux server to better encapsulate dependencies and
+diminish server statefulness.
+
+![](simple-docker.png)
+
+In this model, each Posit product is
+placed in its own long-running container and treated as a standalone
+instance of the product. Multiple containers can be load-balanced and
+treated as a cluster. These containers can be managed by a Kubernetes
+cluster, should you wish.
+
+There are some specific considerations for running Posit products in
+containers, which are detailed in [this
+article](https://support.posit.co/hc/en-us/articles/360021594513).
+
+Posit also provides images, Dockerfiles, and instructions for
+deployment [here](https://hub.docker.com/r/rstudio/rstudio-server-pro).
+
+## Managing load with containerization
+
+Some administrators wish to use containerization to manage the load on
+their data science infrastructure. If this is the case for your installation, we recommend using Workbench's
+*launcher* feature to use a Kubernetes cluster as the computation engine
+for Workbench. With the launcher, all user sessions - both
+interactive and ad-hoc jobs - are moved from the Workbench instance
+to the Kubernetes cluster. 
+
+![](docker-k8s.png)
+
+In this configuration, Workbench
+makes requests for resources to the Kubernetes cluster, so standard
+Kubernetes tooling can be used to autoscale the nodes underlying the
+cluster. The Workbench machine or pod itself can be relatively
+small, as all of the computational load will be directed elsewhere.
+
+Please see [this article](/sys-admin/launcher/kubernetes/) for more
+information on how the launcher works and on configuration.
+
